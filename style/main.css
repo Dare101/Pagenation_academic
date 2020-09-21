@@ -1,0 +1,122 @@
+
+
+ .content_img{
+  position: relative;
+  text-align: center;
+  float: right;
+  margin-right: auto;
+  width: fit-content;
+ }
+ 
+ /* Child Text Container */
+ .content_img #descrip{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ 
+ /* Hover on Parent Container */
+ .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover #descrip{
+  width: 100%;
+  font-size: 18px;
+  visibility: visible;
+  opacity: 0.8; 
+ }
+ body{
+  background: rgb(28, 29, 20);
+  color: white;
+  background-image: linear-gradient(
+      115deg,
+      rgba(10, 10, 9, 0.904),
+      rgba(247, 95, 7, 0.836)
+    ),
+    url( pics/footback.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+ 
+}
+ 
+.owl-carousel.item{
+  margin: 3px;
+  margin-left: 20px;
+}
+.owl-carousel.item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+<style>
+* {box-sizing: border-box;}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+/* HEADINF STYLE*/
+html {
+	background: white;
+}
+
+.popout {
+	font-family: Futura, sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	padding: 80px;
+}
+
+@keyframes ani {
+	0% {
+		transform: translate3d(0, 0, 0);
+		text-shadow: 0em 0em 0 lightblue;
+		color: black;
+	}
+
+	30% {
+		transform: translate3d(0, 0, 0);
+		text-shadow: 0em 0em 0 lightblue;
+		color: black;
+	}
+
+	70% {
+		transform: translate3d(0.08em, -0.08em, 0);
+		text-shadow: -0.08em 0.08em lightblue;
+		color: black;
+	}
+
+	100% {
+		transform: translate3d(0.08em, -0.08em, 0);
+		text-shadow: -0.08em 0.08em lightblue;
+		color: black;
+	}
+}
+
+.popout span {
+	position: relative;
+	display: inline-block;
+	animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.popout span:nth-last-child(1n) {
+	animation-delay: -0.16667s;
+}
+
+.popout span:nth-last-child(2n) {
+	animation-delay: -0.33333s;
+}
+
+.popout span:nth-last-child(3n) {
+	animation-delay: -0.5s;
+}

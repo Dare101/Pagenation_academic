@@ -1,0 +1,218 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ 
+.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}
+.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}
+.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}
+.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}
+.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}
+
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}
+.owl-theme .owl-nav{margin-top:10px}
+
+.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}
+ */
+
+
+            
+.owl-dots {
+    text-align: center;
+  }
+  
+  .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+  }
+  
+  .owl-dots .owl-dot.active span,
+  .owl-dots .owl-dot:hover span {
+    background: #869791;
+  }
+      
+            
+  .owl-prev span,
+  .owl-next span {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+  }
+  
+  .owl-prev span {
+    content: '<';
+    left: 0;
+  }
+  
+  .owl-next span {
+    content: '>';
+    right: 0;
+  }
+        
+
+  .owl-carousel.item{
+        margin: 3px;
+        margin-left: 20px;
+      }
+      .owl-carousel.item img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+
+
+      .header {
+        background-color: #8a8d8f52;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+      }
+      .footer {
+        background-color: #e1f14b;
+        background-image: linear-gradient(
+          115deg,
+          rgba(240, 73, 61, 0.781),
+          rgba(247, 183, 7, 0.651)
+        ),
+        url(pics/footback.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+        padding: 10px;
+        color: rgb(20, 19, 19);
+        margin-top: 100px;
+      
+      }
+      
+      /* header content*/
+      
+      * {
+        box-sizing: border-box; /* if you use border box, you will not have to worry about the border size, padding */
+         }
+    
+
+    
+  
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+    .flexContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: baseline;	
+        /* flex propoerties end here */
+        
+      
+        padding: 10px;
+        background-color: #e1f14b;
+        background-image: linear-gradient(
+          115deg,
+          rgba(237, 240, 61, 0.658),
+          rgba(247, 183, 7, 0.651)
+        ),
+        url( pics/footback.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+        padding: 10px;
+        color: rgb(20, 19, 19);
+    }
+
+
+
+    div div {
+        /* all my flex items are styled here */
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    #flexItem1 {
+        flex-basis:40px;
+        order: -2;
+    }
+    
+    #flexItem2{
+        order: 7;
+    }
+    
+    
+    
+    #flexItem3 {
+        order:10; 
+        
+    }
+    
+    #flexItem4 {
+        order: -1;
+        flex-grow: 20; 
+    }
+       /* search bar */
+    @media screen and (max-width: 600px) {
+        .search-container {
+          float: none;
+        }
+
+        .search-container button {
+            
+            padding: 6px 10px;
+            margin-top: 8px;
+           
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+          }
+    
+.contain{
+    margin: 3.125rem auto 0 auto;
+}
+.flexfooter {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 5px;
+    justify-content: space-evenly;
+		
+  }
+  
+  
+  #flxfoot1 {
+    order: -1;
+
+  }
+  #flxfoot2 {
+    order: 4;
+    
+
+  }
+  #flxfoot3 {
+    order: 15;
+
+  }
+  #flxfoot4 {
+    order:1; 
+	flex-grow: 10;
+    align-self:flex-end;
+    justify-content: flex-end;
+    text-align: right;
+
+  }
+ 
+
+
+  
